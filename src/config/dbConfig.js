@@ -4,4 +4,4 @@ var dbConfig = "mongodb+srv://root:root@cluster0.ypip2k3.mongodb.net/annotations
 
 var connection = mongoose.connect(dbConfig);
 
-module.exports = connection;
+module.exports = connection; 
