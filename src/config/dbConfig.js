@@ -1,7 +1,12 @@
 
 var mongoose = require('mongoose');
-var dbConfig = "mongodb+srv://root:root@cluster0.ypip2k3.mongodb.net/annotations?retryWrites=true&w=majority";
-
-var connection = mongoose.connect(dbConfig);
+var connection = async () => {
+    try {
+        await mongoose.connect(process.env.MONGODB_CONNECT_URI)
+        console.log("Connect to MongoDB successfully")
+    } catch (error) {
+        console.log("Connect failed " + error.message)
+    }
+}
 
 module.exports = connection;
