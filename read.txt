@@ -1,0 +1,14 @@
+cd pasta
+npm init -y
+npm i express
+npm i nodeman -D
+create an src folder/index.js
+
+mongobg
+create an account and create an project
+go to database and browser collections
+create an myowndb ou create a database
+go to overview or go to connect
+go to connect, connect to your application, drivers, 
+get something like that mongodb+srv://root:<password>@cluster0.89nozu7.mongodb.net/?retryWrites=true&w=majority
+install mongoose
