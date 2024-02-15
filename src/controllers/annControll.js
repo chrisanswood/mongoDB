@@ -26,11 +26,4 @@ module.exports = {
         }
         return response.status(401).json({ error: "sem registro encontrado" });
     }
-}
-
-/* app.get('/', function (request, response) {
-    return response.json({
-        nome: "Chris",
-        age: 27
-    });
-}) */
+} 
